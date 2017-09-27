@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AB55B31E1F74D9E8008F3B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55B31D1F74D9E8008F3B8D /* AppDelegate.swift */; };
-		AB55B3201F74D9E8008F3B8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55B31F1F74D9E8008F3B8D /* ViewController.swift */; };
 		AB55B3231F74D9E8008F3B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55B3211F74D9E8008F3B8D /* Main.storyboard */; };
 		AB55B3251F74D9E8008F3B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB55B3241F74D9E8008F3B8D /* Assets.xcassets */; };
 		AB55B3281F74D9E8008F3B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55B3261F74D9E8008F3B8D /* LaunchScreen.storyboard */; };
-		AB55B3331F74D9E8008F3B8D /* CountryDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55B3321F74D9E8008F3B8D /* CountryDetailTests.swift */; };
-		AB55B33E1F74D9E8008F3B8D /* CountryDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55B33D1F74D9E8008F3B8D /* CountryDetailUITests.swift */; };
+		AB55B34C1F74DB13008F3B8D /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55B34B1F74DB13008F3B8D /* MyCell.swift */; };
+		AB55B34E1F74E5E5008F3B8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55B34D1F74E5E5008F3B8D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +35,14 @@
 /* Begin PBXFileReference section */
 		AB55B31A1F74D9E8008F3B8D /* CountryDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB55B31D1F74D9E8008F3B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB55B31F1F74D9E8008F3B8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB55B3221F74D9E8008F3B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB55B3241F74D9E8008F3B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB55B3271F74D9E8008F3B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB55B3291F74D9E8008F3B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB55B32E1F74D9E8008F3B8D /* CountryDetailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryDetailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB55B3321F74D9E8008F3B8D /* CountryDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailTests.swift; sourceTree = "<group>"; };
-		AB55B3341F74D9E8008F3B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB55B3391F74D9E8008F3B8D /* CountryDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB55B33D1F74D9E8008F3B8D /* CountryDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailUITests.swift; sourceTree = "<group>"; };
-		AB55B33F1F74D9E8008F3B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB55B34B1F74DB13008F3B8D /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		AB55B34D1F74E5E5008F3B8D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				AB55B31C1F74D9E8008F3B8D /* CountryDetail */,
-				AB55B3311F74D9E8008F3B8D /* CountryDetailTests */,
-				AB55B33C1F74D9E8008F3B8D /* CountryDetailUITests */,
 				AB55B31B1F74D9E8008F3B8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,31 +92,14 @@
 			isa = PBXGroup;
 			children = (
 				AB55B31D1F74D9E8008F3B8D /* AppDelegate.swift */,
-				AB55B31F1F74D9E8008F3B8D /* ViewController.swift */,
+				AB55B34D1F74E5E5008F3B8D /* ViewController.swift */,
+				AB55B34B1F74DB13008F3B8D /* MyCell.swift */,
 				AB55B3211F74D9E8008F3B8D /* Main.storyboard */,
 				AB55B3241F74D9E8008F3B8D /* Assets.xcassets */,
 				AB55B3261F74D9E8008F3B8D /* LaunchScreen.storyboard */,
 				AB55B3291F74D9E8008F3B8D /* Info.plist */,
 			);
 			path = CountryDetail;
-			sourceTree = "<group>";
-		};
-		AB55B3311F74D9E8008F3B8D /* CountryDetailTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB55B3321F74D9E8008F3B8D /* CountryDetailTests.swift */,
-				AB55B3341F74D9E8008F3B8D /* Info.plist */,
-			);
-			path = CountryDetailTests;
-			sourceTree = "<group>";
-		};
-		AB55B33C1F74D9E8008F3B8D /* CountryDetailUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AB55B33D1F74D9E8008F3B8D /* CountryDetailUITests.swift */,
-				AB55B33F1F74D9E8008F3B8D /* Info.plist */,
-			);
-			path = CountryDetailUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +170,16 @@
 				TargetAttributes = {
 					AB55B3191F74D9E8008F3B8D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					AB55B32D1F74D9E8008F3B8D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = AB55B3191F74D9E8008F3B8D;
 					};
 					AB55B3381F74D9E8008F3B8D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = AB55B3191F74D9E8008F3B8D;
 					};
 				};
@@ -256,7 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB55B3201F74D9E8008F3B8D /* ViewController.swift in Sources */,
+				AB55B34E1F74E5E5008F3B8D /* ViewController.swift in Sources */,
+				AB55B34C1F74DB13008F3B8D /* MyCell.swift in Sources */,
 				AB55B31E1F74D9E8008F3B8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB55B3331F74D9E8008F3B8D /* CountryDetailTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB55B33E1F74D9E8008F3B8D /* CountryDetailUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +384,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imperoIT.CountryDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,6 +396,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imperoIT.CountryDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +408,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imperoIT.CountryDetailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountryDetail.app/CountryDetail";
 			};
 			name = Debug;
@@ -439,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imperoIT.CountryDetailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountryDetail.app/CountryDetail";
 			};
 			name = Release;
@@ -450,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imperoIT.CountryDetailUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = CountryDetail;
 			};
 			name = Debug;
@@ -461,6 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = imperoIT.CountryDetailUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = CountryDetail;
 			};
 			name = Release;
@@ -484,6 +469,7 @@
 				AB55B3441F74D9E8008F3B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB55B3451F74D9E8008F3B8D /* Build configuration list for PBXNativeTarget "CountryDetailTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +478,7 @@
 				AB55B3471F74D9E8008F3B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB55B3481F74D9E8008F3B8D /* Build configuration list for PBXNativeTarget "CountryDetailUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +487,7 @@
 				AB55B34A1F74D9E8008F3B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

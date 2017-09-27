@@ -1,25 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountryDetail" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bw3-9b-B9h">
+                                <rect key="frame" x="0.0" y="50" width="320" height="430"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="73" id="Xbj-Kg-XdM" customClass="MyCell" customModule="CountryDetail" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xbj-Kg-XdM" id="QWt-P1-Ev5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-30-TF1">
+                                                    <rect key="frame" x="8" y="19" width="304" height="18"/>
+                                                    <color key="backgroundColor" red="1" green="0.41652835360000001" blue="0.075352535430000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.41652835355302542" blue="0.075352535426852607" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MVF-30-TF1" secondAttribute="trailing" id="5ho-Pi-QS6"/>
+                                                <constraint firstItem="MVF-30-TF1" firstAttribute="leading" secondItem="QWt-P1-Ev5" secondAttribute="leadingMargin" id="8xH-Sd-b4U"/>
+                                                <constraint firstItem="MVF-30-TF1" firstAttribute="top" secondItem="QWt-P1-Ev5" secondAttribute="topMargin" constant="11" id="aWt-OQ-1Q7"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="MVF-30-TF1"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="MVF-30-TF1"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="country" destination="MVF-30-TF1" id="tVR-80-gJB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="wMD-Bm-eV4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TqX-bK-rkZ"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZq-o8-3Cg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="p6d-WG-fR5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bw3-9b-B9h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Oc-1Y-fih"/>
+                            <constraint firstItem="bw3-9b-B9h" firstAttribute="top" secondItem="nZq-o8-3Cg" secondAttribute="bottom" constant="-10" id="OAX-r5-jBa"/>
+                            <constraint firstItem="nZq-o8-3Cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z1N-54-BDZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bw3-9b-B9h" secondAttribute="bottom" id="bpf-r0-n2l"/>
+                            <constraint firstAttribute="trailing" secondItem="bw3-9b-B9h" secondAttribute="trailing" id="djd-8Q-aRB"/>
+                            <constraint firstAttribute="trailing" secondItem="nZq-o8-3Cg" secondAttribute="trailing" id="lFh-eH-doo"/>
+                            <constraint firstItem="nZq-o8-3Cg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yRs-kp-hDa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bw3-9b-B9h"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bw3-9b-B9h"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="myTable" destination="bw3-9b-B9h" id="HMT-Nx-AMd"/>
+                        <outlet property="mylable" destination="nZq-o8-3Cg" id="9Ck-I1-QKQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="201.94902548725639" y="272.80000000000001"/>
         </scene>
     </scenes>
 </document>
